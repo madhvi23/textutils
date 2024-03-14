@@ -10,6 +10,10 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
+sys.path.append('/home/ubuntu/textutils')
+
+# add the virtualenv site-packages path to the sys.path
+sys.path.append('/home/ubuntu/env/lib/python3.10/site-packages')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "textutils.settings")
 
